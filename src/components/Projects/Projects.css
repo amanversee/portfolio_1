@@ -1,0 +1,60 @@
+#projects{
+    width:100%;
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    flex-direction:column;
+    gap:20px;
+    margin-top:80px;
+    padding:40px 0;
+}
+
+/* slider container */
+
+.slider{
+    width:90%;
+    height:320px;
+    display:flex;
+    align-items:center;
+    gap:30px;
+
+    overflow-x:auto;
+    overflow-y:hidden;
+
+    scrollbar-width:none;
+    padding:20px;
+
+    position:relative;   /* keeps children inside project section */
+}
+
+/* hide scrollbar in chrome */
+
+.slider::-webkit-scrollbar{
+    display:none;
+}
+
+/* title */
+
+#para{
+    font-size:3.5vmax;
+    background:linear-gradient(
+        to right,
+        rgb(203,53,108),
+        white
+    );
+    background-clip:text;
+    -webkit-background-clip:text;
+    color:transparent;
+    text-align:center;
+}
+
+/* optional project description */
+
+.project-desc{
+    color:#9ca3af;
+    font-size:16px;
+    text-align:center;
+    max-width:600px;
+    padding:0 20px;
+}
